@@ -13,6 +13,9 @@
 		1E0E97EE1EA8DA000070B586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E97ED1EA8DA000070B586 /* Assets.xcassets */; };
 		1E0E97F11EA8DA000070B586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E97EF1EA8DA000070B586 /* LaunchScreen.storyboard */; };
 		1E0E97FC1EA8DA000070B586 /* BM_3_Segment__DailyUI_068_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E97FB1EA8DA000070B586 /* BM_3_Segment__DailyUI_068_Tests.swift */; };
+		1E0E98071EA8DD4C0070B586 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E98061EA8DD4C0070B586 /* SegmentedControl.swift */; };
+		1E268BF31EAA709F00774F2F /* ViewController UI065.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E268BF21EAA709E00774F2F /* ViewController UI065.swift */; };
+		1EBFAE221EA905A0008DEEF5 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFAE211EA905A0008DEEF5 /* FancyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		1E0E97F71EA8DA000070B586 /* BM 3 Segment (DailyUI 068)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BM 3 Segment (DailyUI 068)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E0E97FB1EA8DA000070B586 /* BM_3_Segment__DailyUI_068_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BM_3_Segment__DailyUI_068_Tests.swift; sourceTree = "<group>"; };
 		1E0E97FD1EA8DA000070B586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E0E98061EA8DD4C0070B586 /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		1E268BF21EAA709E00774F2F /* ViewController UI065.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController UI065.swift"; sourceTree = "<group>"; };
+		1EBFAE211EA905A0008DEEF5 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +85,13 @@
 			children = (
 				1E0E97E61EA8D9FF0070B586 /* AppDelegate.swift */,
 				1E0E97E81EA8D9FF0070B586 /* ViewController.swift */,
+				1E268BF21EAA709E00774F2F /* ViewController UI065.swift */,
 				1E0E97EA1EA8D9FF0070B586 /* Main.storyboard */,
 				1E0E97ED1EA8DA000070B586 /* Assets.xcassets */,
 				1E0E97EF1EA8DA000070B586 /* LaunchScreen.storyboard */,
 				1E0E97F21EA8DA000070B586 /* Info.plist */,
+				1E0E98061EA8DD4C0070B586 /* SegmentedControl.swift */,
+				1EBFAE211EA905A0008DEEF5 /* FancyButton.swift */,
 			);
 			path = "BM 3 Segment (DailyUI 068)";
 			sourceTree = "<group>";
@@ -202,7 +211,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E0E97E91EA8D9FF0070B586 /* ViewController.swift in Sources */,
+				1EBFAE221EA905A0008DEEF5 /* FancyButton.swift in Sources */,
+				1E0E98071EA8DD4C0070B586 /* SegmentedControl.swift in Sources */,
 				1E0E97E71EA8D9FF0070B586 /* AppDelegate.swift in Sources */,
+				1E268BF31EAA709F00774F2F /* ViewController UI065.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				1E0E98021EA8DA000070B586 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E0E98031EA8DA000070B586 /* Build configuration list for PBXNativeTarget "BM 3 Segment (DailyUI 068)Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				1E0E98051EA8DA000070B586 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
