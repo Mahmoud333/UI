@@ -420,6 +420,9 @@
                                         <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="g4o-i3-lrB" kind="presentation" id="G13-Cu-vyO"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="L3y-Nh-OKJ">
                                 <rect key="frame" x="27.5" y="535" width="320" height="92"/>
@@ -559,6 +562,100 @@
                 </view>
             </objects>
             <point key="canvasLocation" x="896.79999999999995" y="222.63868065967017"/>
+        </scene>
+        <!--View ControllerUI069-->
+        <scene sceneID="Kkn-1n-FFs">
+            <objects>
+                <viewController id="g4o-i3-lrB" customClass="ViewController_UI069" customModule="BM_3_Segment__DailyUI_068_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vds-fq-d6f"/>
+                        <viewControllerLayoutGuide type="bottom" id="T8f-no-mXO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OMc-GE-VQK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWd-cJ-1m7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CUH-YT-eld">
+                                        <rect key="frame" x="51" y="50.5" width="273" height="99.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-Il-uLC">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="63.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="50"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WSW-Nu-MA3">
+                                                <rect key="frame" x="14" y="71.5" width="245" height="29"/>
+                                                <segments>
+                                                    <segment title="Around Me"/>
+                                                    <segment title="Country"/>
+                                                    <segment title="World"/>
+                                                </segments>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SegmentPressed:" destination="g4o-i3-lrB" eventType="valueChanged" id="VPC-Ja-ihg"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="CUH-YT-eld" firstAttribute="centerY" secondItem="xWd-cJ-1m7" secondAttribute="centerY" id="80w-hB-0tP"/>
+                                    <constraint firstItem="CUH-YT-eld" firstAttribute="centerX" secondItem="xWd-cJ-1m7" secondAttribute="centerX" id="Ryj-HS-7VU"/>
+                                    <constraint firstAttribute="height" constant="200" id="lKc-gF-icp"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="199" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zG0-Ey-XPv">
+                                <rect key="frame" x="0.0" y="199" width="375" height="468"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" rowHeight="300" id="pqy-6T-Uns" customClass="ImageCell" customModule="BM_3_Segment__DailyUI_068_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pqy-6T-Uns" id="XZM-ZI-rVR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iah-dK-tMm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="iah-dK-tMm" secondAttribute="trailing" id="AlY-6e-oaV"/>
+                                                <constraint firstAttribute="bottom" secondItem="iah-dK-tMm" secondAttribute="bottom" id="a4T-RC-WXa"/>
+                                                <constraint firstItem="iah-dK-tMm" firstAttribute="top" secondItem="XZM-ZI-rVR" secondAttribute="top" id="lQv-F5-jXc"/>
+                                                <constraint firstItem="iah-dK-tMm" firstAttribute="leading" secondItem="XZM-ZI-rVR" secondAttribute="leading" id="xT0-rG-Dnl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ImageV" destination="iah-dK-tMm" id="mqw-AE-uLw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xWd-cJ-1m7" secondAttribute="trailing" id="Byd-8S-Wbx"/>
+                            <constraint firstItem="xWd-cJ-1m7" firstAttribute="leading" secondItem="OMc-GE-VQK" secondAttribute="leading" id="Rx5-w6-Xb2"/>
+                            <constraint firstItem="xWd-cJ-1m7" firstAttribute="top" secondItem="OMc-GE-VQK" secondAttribute="top" id="fG3-H9-Rog"/>
+                            <constraint firstItem="xWd-cJ-1m7" firstAttribute="centerX" secondItem="OMc-GE-VQK" secondAttribute="centerX" id="w9r-0O-nXZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="GradientV" destination="xWd-cJ-1m7" id="dU1-cd-yaO"/>
+                        <outlet property="tableView" destination="zG0-Ey-XPv" id="QAV-s6-8VF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPU-Br-oGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725.5999999999999" y="222.63868065967017"/>
         </scene>
     </scenes>
     <resources>
